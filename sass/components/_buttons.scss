@@ -1,0 +1,27 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  min-width: 48px;
+  min-height: 48px;
+  outline: none;
+
+  i {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    @include mq(768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+button:hover,
+button:focus {
+  i {
+    padding-bottom: 0.5rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+}
+
+
